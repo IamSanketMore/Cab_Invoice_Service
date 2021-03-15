@@ -27,8 +27,8 @@ public class InvoiceServiceTest {
     }
 
     @Test
-
-    public void givenUserID_shouldReturn_invoiceList() {
+    public void givenUserID_shouldReturn_invoiceList()
+    {
         int rideId= 2;
         InvoiceGeneratorID summary = invoiceService.invoiceList(rideId);
         InvoiceGeneratorID expectedInvoiceSummary = new InvoiceGeneratorID(1,30.2,2);

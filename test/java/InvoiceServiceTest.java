@@ -23,6 +23,7 @@ public class InvoiceServiceTest {
         InvoiceGenerator summary = invoiceService.CalculateFare(rides);
         InvoiceGenerator expectedInvoiceSummary =new InvoiceGenerator(2,30.0);
         Assert.assertEquals(expectedInvoiceSummary, summary);
+
     }
 
     @Test
